@@ -25,10 +25,23 @@ h5,
 h6 {
   font-family: 'Press Start 2P', cursive;
   letter-spacing: 2px;
+  text-align: center;
+  
 }
+/* .title--main{
+display: inline-flex;
+  justify-content: center;
+    padding: 3px;
+    font-size: 24px;
+    background-color: hsla(0, 0%, 100%, 0.40);
+    color: black;
+    text-align: center;
+} */
 
 body {
-  background-color: #1E1A33;
+  background-image: url("./components/images/main.jpg");
+    background-attachment: fixed;
+    
 }
 
 code {

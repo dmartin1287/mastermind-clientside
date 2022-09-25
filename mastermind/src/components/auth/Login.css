@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 .h1,
 h1 {
     font-size: 2.4rem;
@@ -69,4 +71,38 @@ h2 {
 .button--close {
     position: relative;
     bottom: -2rem;
+}
+
+/* CSS */
+.link--register {
+    background-color: turquoise;
+    border: 1px solid turquoise;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #ffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Righteous', cursive;
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+}
+
+.link--register:hover {
+    background-color: paleturquoise;
+}
+
+.link--register:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
 }

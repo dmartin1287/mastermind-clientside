@@ -1,15 +1,90 @@
-.navbar {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: left;
-}
+    @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-.navbar__item {
-    flex-basis: 20%;
-    list-style-type: none;
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: left;
+    }
+    .navbar__logo {
+    width: 6rem;
+    height: 6rem;
+    padding: 0 2em 0 0;
+    margin-left: -2rem;
 }
+    .navbar__item {
+        flex-basis: 20%;
+        list-style-type: none;
+        font-family: 'Righteous', cursive;
+    }
 
-.navbar__logout {
-    margin-left: auto;
-}
+    .navbar__logout {
+        margin-left: auto;
+    }
 
+    .logo {
+        height: 120px;
+        width: 120px;
+    }
+
+    /* Style the top navigation bar */
+
+    .navbar {
+        overflow: hidden;
+        background-color: #B01652;
+    }
+
+    /* Style the navbar links */
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: #1ff5dc;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar__link {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        padding: 8px 20px;
+        margin: 0px 3px 6px;
+        text-align: center;
+        border: 2px solid #B01652;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        white-space: nowrap;
+        z-index: 0;
+    }
+
+    .navbar__link i {
+        padding-right: 8px;
+    }
+
+    .navbar__link::before {
+        position: absolute;
+        content: "";
+        background: #1ff5dc;
+        transition-duration: 0.3s;
+        z-index: -1;
+        inset: 0px auto auto 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .navbar__link:hover::before {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+    .navbar__link:hover {
+        color: #B01652;
+        background: #1ff5dc;
+        transition: color 0.3s ease 0s, background 0s ease 0.3s;
+    }

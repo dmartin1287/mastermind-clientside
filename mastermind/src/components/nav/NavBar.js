@@ -12,10 +12,10 @@ export const NavBar = () => {
                 <Link className="navbar__link" to="/Home">Home</Link>
             </li>
             <li className="navbar__item active">
-                <Link className="navbar__link" to="/quiz">Create Quiz</Link>
+                <Link className="navbar__link" to="/quizForm">Create Quiz</Link>
             </li>
             <li className="navbar__item active">
-                <Link className="navbar__link" to="/triviaCategories">Trivia Categories</Link>
+                <Link className="navbar__link" to="/quiz">Trivia Categories</Link>
             </li>
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/scores">Highscores</Link>

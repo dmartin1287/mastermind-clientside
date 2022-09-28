@@ -11,7 +11,7 @@ export const RequestList = ({ searchTermState }) => {
         const [openOnly, updateOpenOnly] = useState(false)
         const navigate = useNavigate()
 
-        const localUser = localStorage.getItem("bmh_user")
+        const localUser = localStorage.getItem("master_user")
         const bmhUserObject = JSON.parse(localUser)
 
     //       useEffect(
@@ -129,7 +129,7 @@ export const RequestList = ({ searchTermState }) => {
             )}
             <h2> List of Requests </h2>
             <article className="requests">
-             {" "}
+            {" "}
               {filteredRequests.map((request) => (
                 <Request
                   key={`request--${request.id}`}

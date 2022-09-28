@@ -5,14 +5,7 @@ import "./Home.css"
 export const HomePage = () => {
 
     return <>
-        <section className="container">
-            <div className="row">
-                <h2>
-            Welcome to Mastermind, the ultimate Trivia Game!
-            
-            </h2>
-            </div>
-        </section>
-
+        
+            <h2 className="greeting">Welcome to Mastermind, the ultimate trivia game! </h2>
     </>
 }

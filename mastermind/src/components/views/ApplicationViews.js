@@ -1,6 +1,6 @@
 import { Outlet, Route, Routes } from "react-router-dom"
 import { HomePage } from "../Home/Homepage"
-
+import { CategoryList } from "../quiz/CategoryList"
 
 
 
@@ -20,18 +20,18 @@ export const ApplicationViews = () => {
         </>
         }
         >
-        <Route
-        path="requests"
-        element={
+			<Route
+            path="quiz"
+            element={
             <>
             {/*These cannot communicate with one another until they are wrapped in a parent
                     
                     <RequestList /> 
                     They will now be returned in RequestContainer.js
                     */}
-        <triviaCategories />
+            <CategoryList />
             </>
-    }
+            }
         />
         <Route path="Home" element={ < HomePage />} />  
         </Route>
